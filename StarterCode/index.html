@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"><option value ="940">940</option>
+                      <option value ="941">941</option>
+            <option value ="943">943</option>
+            <option value ="944">944</option>
+            <option value ="945">945</option>
+            <option value ="946">946</option>
+            <option value ="947">947</option>
+            <option value ="948">948</option>
+            <option value ="949">949</option>
+            <option value ="950">950</option>
+            <option value ="951">951</option>
+            <option value ="952">952</option>
+            <option value ="953">953</option>
+            <option value ="954">954</option>
+            <option value ="955">955</option>
+            <option value ="956">956</option>
+            <option value ="957">957</option>
+            <option value ="958">958</option>
+            <option value ="959">959</option>
+            <option value ="960">960</option>
+            <option value ="961">961</option>
+            <option value ="962">962</option>
+            <option value ="963">963</option>
+            <option value ="964">964</option>
+            <option value ="965">965</option></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographics Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script> -->
+  
+</body>
+
+</html>
